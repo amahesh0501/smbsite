@@ -1,0 +1,68 @@
+<img src="http://i.imgur.com/iJMyPIP.png" class="header_image">
+<br/><br/>
+<span class="class="black-wrapper"">
+<div class="container">
+  <div class="row">
+    <h3> Tell Us About Your Business </h3>
+    <br/>
+    <div class="col-md-4">
+      <%= form_for @business do |f| %>
+      <div class="form-field "><%= f.text_field :name, placeholder: "Business Name", class: "text-input-home" %></div>
+      <div class="form-field"><%= f.text_field :slogan, placeholder: "Business Slogan" %></div>
+      <div class="form-field"><%= f.text_field :phone, placeholder: "Business Phone Number" %></div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-field"><%= f.email_field :email, placeholder: "Business E-Mail Address" %></div>
+      <div class="form-field"><%= f.text_field :address, placeholder: "Address" %></div>
+      <div class="form-field"><%= f.text_field :youtube_url, placeholder: "Featured YouTube Video URL" %></div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-field"><%= f.text_area  :description, placeholder: "Business Description (About Us)", :cols => "40", :rows => "9" %></div>
+    </div>
+  </div>
+
+  <div class="row">
+    <h3> Tell Us About Your Products / Services </h3>
+    <br/>
+    <div class="col-md-4">
+      <div class="form-field"><%= f.text_field :feature_one, placeholder: "Product/Service One" %></div>
+      <div class="form-field"><%= f.text_area :feature_one_description, placeholder: "Product/Service One Description", :cols => "31", :rows => "5" %></div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-field"><%= f.text_field :feature_two, placeholder: "Product/Service Two" %></div>
+      <div class="form-field"><%= f.text_area :feature_two_description, placeholder: "Product/Service Two Description", :cols => "31", :rows => "5" %></div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-field"><%= f.text_field :feature_three, placeholder: "Product/Service Three" %></div>
+      <div class="form-field"><%= f.text_area :feature_three_description, placeholder: "Product/Service Three Description", :cols => "31", :rows => "5" %></div>
+    </div>
+  </div>
+
+  <div class="row">
+    <h3> Upload an Image </h3>
+    <br/>
+    <div class="col-md-4">
+      <div class="form-field"><%= f.file_field :image_1  %></div>
+      <div class="form-field"><%= f.file_field :image_2  %></div>
+      <div class="form-field"><%= f.file_field :image_3  %></div>
+      <div class="form-field"><%= f.file_field :image_4  %></div>
+      <div class="form-field"><%= f.file_field :image_5  %></div>
+      <div class="form-field"><%= f.file_field :image_6  %></div>
+      <div class="form-field"><%= f.file_field :image_7  %></div>
+      <div class="form-field"><%= f.file_field :image_8  %></div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <br/>
+      <%= f.submit "Create Website", :class => 'btn btn-success'  %>
+      <% end %>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+<br/><br/><br/>

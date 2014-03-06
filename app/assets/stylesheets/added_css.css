@@ -1,0 +1,36 @@
+
+
+h2.main_text {
+   position: absolute;
+   top: 200px;
+   font-size: 50px;
+   left: 0;
+   width: 100%;
+}
+.main_image{
+  height: 400px;
+  width: 100%;
+}
+
+
+#contact{
+  background-image: url(/style/images/art/parallax1.jpg)
+}
+
+.navbar-brand{
+  color: white !important;
+}
+
+.video{
+  padding-bottom: 40px;
+}
+
+.button-row{
+  padding-top: 20px;
+}
+
+fieldset{
+  padding: 10px;
+}
+
+

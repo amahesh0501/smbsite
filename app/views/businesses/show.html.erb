@@ -1,0 +1,219 @@
+<div id="home" class="body-wrapper">
+  <div class="yamm navbar basic default">
+    <div class="navbar-header">
+      <div class="container">
+        <div class="basic-wrapper"> <a class="btn responsive-menu pull-right" data-toggle="collapse" data-target=".navbar-collapse"><i class='icon-menu-1'></i></a> <a class="navbar-brand" href="/businesses/<%= @business.id %>"><%= @business.name %></a> </div>
+        <div class="collapse navbar-collapse pull-right">
+          <ul class="nav navbar-nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--/.nav-collapse -->
+  </div>
+  <!--/.navbar -->
+  <div class="offset"></div>
+
+  <img src="style/images/art/slider-bg1.jpg" class="main_image" alt="" />
+<div class="section-title text-center">
+  <h2 class="main_text"><%= @business.slogan %></h2>
+</div>
+
+
+  <div id="services" class="light-wrapper">
+    <div class="container inner">
+      <div class="section-title text-center">
+        <h2>Our products and services</h2>
+        <span class="icon"><i class="fa fa-shopping-cart"></i></i></span> </div>
+      <div class="col-services">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="icon"> <i class="icon-picons-printer icn"></i> </div>
+            <!-- /.icon -->
+            <div class="text">
+              <h5 class="upper"><%= @business.feature_one %></h5>
+              <p><%= @business.feature_one_description %></p>
+            </div>
+            <!-- /.text -->
+          </div>
+          <!-- /.col-sm-4 -->
+          <div class="col-sm-4">
+            <div class="icon"> <i class="icon-picons-tv icn"></i> </div>
+            <!-- /.icon -->
+            <div class="text">
+              <h5 class="upper"><%= @business.feature_two %></h5>
+              <p><%= @business.feature_two_description %></p>
+            </div>
+            <!-- /.text -->
+          </div>
+          <!-- /.col-sm-4 -->
+          <div class="col-sm-4">
+            <div class="icon"> <i class="icon-picons-gift icn"></i> </div>
+            <!-- /.icon -->
+            <div class="text">
+              <h5 class="upper"><%= @business.feature_three %></h5>
+              <p><%= @business.feature_three_description %></p>
+            </div>
+            <!-- /.text -->
+          </div>
+          <!-- /.col-sm-4 -->
+        </div>
+        <!-- /.row -->
+        <div class="divide30"></div>
+
+      </div>
+      <!-- /.services -->
+    <div class="clearfix"></div>
+
+    </div>
+  </div>
+  <!-- /#services -->
+
+
+
+  <div class="color-wrapper">
+    <div class="container inner text-center">
+      <div class="thin">
+        <iframe width="560" height="315" src="//www.youtube.com/embed/<%=@business.youtube_id%>" frameborder="0" allowfullscreen></iframe><br/>
+        <p class="lead"><%= @business.slogan %></p>
+        <a href="#contact" class="btn bm0">Get In Touch</a> </div>
+    </div>
+  </div>
+
+  <!-- /.light-wrapper -->
+  <div id="about" class="dark-wrapper">
+    <div class="container inner">
+      <div class="section-title text-center bm20">
+        <h2>About <%= @business.name %></h2>
+        <span class="icon"><i class="fa fa-check-square-o"></i><i class="icon-picons-question"></i></span> </div>
+      <div class="text-center">
+        <p class="lead"><%= @business.description %></p>
+      </div>
+      <div class="divide30"></div>
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+  <div class="parallax testimonials">
+    <div class="container inner text-center">
+      <div class="section-title text-center bm20">
+        <h2>Photo Gallery</h2>
+        <span class="icon"><i class="fa fa-camera"></i><i class="icon-picons-quote"></i></span> </div>
+      <div id="testimonials" class="tab-container">
+        <div class="panel-container">
+          <div class="row">
+            <div class="col-md-3">
+              <%= image_tag @business.image_1.url(:medium), height: 150, width: 200 %><br/><br/>
+              <%= image_tag @business.image_2.url(:medium), height: 150, width: 200 %>
+            </div>
+            <div class="col-md-3">
+              <%= image_tag @business.image_3.url(:medium), height: 150, width: 200 %><br/><br/>
+              <%= image_tag @business.image_4.url(:medium), height: 150, width: 200 %>
+            </div>
+            <div class="col-md-3">
+              <%= image_tag @business.image_5.url(:medium), height: 150, width: 200 %><br/><br/>
+              <%= image_tag @business.image_6.url(:medium), height: 150, width: 200 %>
+            </div>
+            <div class="col-md-3">
+              <%= image_tag @business.image_7.url(:medium), height: 150, width: 200 %><br/><br/>
+              <%= image_tag @business.image_8.url(:medium), height: 150, width: 200 %>
+            </div>
+          </div>
+
+
+
+
+
+      </div>
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.testimonials -->
+
+
+
+
+
+  <div id="contact" class="parallax contact">
+    <div class="container inner">
+      <div class="thin">
+        <div class="section-title text-center">
+          <h2>Get In Touch With Us</h2>
+          <span class="icon"><i class="fa fa-phone"></i> <i class="icon-picons-telephone-call"></i></span> </div>
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="form-container">
+              <div class="response alert alert-success"></div>
+              <form class="forms" action="contact/form-handler.php" method="post">
+                <br/>
+                <fieldset>
+                  <ol>
+                    <li class="form-row text-input-row name-field">
+                      <input type="text" name="name" class="text-input defaultText required" title="Name (Required)" placeholder="Name (Required)"/>
+                    </li>
+                    <li class="form-row text-input-row email-field">
+                      <input type="text" name="email" class="text-input defaultText required email" title="Email (Required)" placeholder="Email (Required)"/>
+                    </li>
+                    <li class="form-row text-input-row subject-field">
+                      <input type="text" name="subject" class="text-input defaultText" title="Subject" placeholder="Subject"/>
+                    </li>
+                    <li class="form-row text-area-row">
+                      <textarea name="message" placeholder="Message" class="text-area required"></textarea>
+                    </li>
+                    <li class="form-row hidden-row">
+                      <input type="hidden" name="hidden" value="" />
+                    </li>
+                    <li class="button-row">
+                      <input type="submit" value="Submit" name="submit" class="btn btn-submit bm0" />
+                    </li>
+                  </ol>
+                  <input type="hidden" name="v_error" id="v-error" value="Required" />
+                  <input type="hidden" name="v_email" id="v-email" value="Enter a valid email" />
+                </fieldset>
+              </form>
+            </div>
+            <!-- /.form-container -->
+          </div>
+          <!-- /.span8 -->
+          <aside class="col-sm-4 sidebar lp10">
+            <div class="sidebox widget">
+              <h4>Contact Details</h4>
+              <p>We can't wait to hear from you! Please get in touch using the information below.</p>
+              <ul class="contact-info">
+                <li><i class="fa fa-map-marker"></i> <%= @business.address %> </li>
+                <li><i class="fa fa-phone"></i> <%= @business.phone %></li>
+                <li><i class="fa fa-inbox"></i> <a href="<%= @business.email %>"><%= @business.email %></a></li>
+              </ul>
+            </div>
+            <!-- /col -->
+          </aside>
+          <!-- /.span4 -->
+        </div>
+        <!-- /.row -->
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.contact -->
+
+
+  <footer class="black-wrapper">
+    <div class="container inner text-center">
+      <p class="copyright">© 2014 <%= @business.name %>. All rights reserved</p>
+    </div>
+  </footer>
+
+</div>
+
