@@ -35,9 +35,9 @@
 }
 
 .next_product{
-  margin-left: 20px;
+  float: right;
 }
 
 .next_image{
-  margin-left: 70px;
+  float: right;
 }

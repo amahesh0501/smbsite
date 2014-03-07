@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(:version => 20140306080303) do
 
   create_table "businesses", :force => true do |t|
     t.string   "name"
-    t.string   "slogan"
+    t.text     "slogan"
     t.string   "phone"
     t.string   "email"
     t.string   "address"
@@ -63,6 +63,18 @@ ActiveRecord::Schema.define(:version => 20140306080303) do
     t.string   "image_8_content_type"
     t.integer  "image_8_file_size"
     t.datetime "image_8_updated_at"
+    t.string   "image_p_1_file_name"
+    t.string   "image_p_1_content_type"
+    t.integer  "image_p_1_file_size"
+    t.datetime "image_p_1_updated_at"
+    t.string   "image_p_2_file_name"
+    t.string   "image_p_2_content_type"
+    t.integer  "image_p_2_file_size"
+    t.datetime "image_p_2_updated_at"
+    t.string   "image_p_3_file_name"
+    t.string   "image_p_3_content_type"
+    t.integer  "image_p_3_file_size"
+    t.datetime "image_p_3_updated_at"
   end
 
   create_table "products", :force => true do |t|

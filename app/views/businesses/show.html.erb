@@ -20,7 +20,7 @@
 
   <img src="style/images/art/slider-bg1.jpg" class="main_image" alt="" />
 <div class="section-title text-center">
-  <h2 class="main_text"><%= @business.slogan %></h2>
+  <h2 class="main_text lead"><%= @business.slogan %></h2>
 </div>
 
 
@@ -35,6 +35,8 @@
             <div class="icon"> <i class="icon-picons-printer icn"></i> </div>
             <!-- /.icon -->
             <div class="text">
+              <%= image_tag @business.image_p_1.url(:medium), height: 250, width: 400 %>
+
               <h5 class="upper"><%= @business.feature_one %></h5>
               <p><%= @business.feature_one_description %></p>
             </div>
@@ -45,6 +47,7 @@
             <div class="icon"> <i class="icon-picons-tv icn"></i> </div>
             <!-- /.icon -->
             <div class="text">
+              <%= image_tag @business.image_p_2.url(:medium), height: 250, width: 400 %>
               <h5 class="upper"><%= @business.feature_two %></h5>
               <p><%= @business.feature_two_description %></p>
             </div>
@@ -55,6 +58,7 @@
             <div class="icon"> <i class="icon-picons-gift icn"></i> </div>
             <!-- /.icon -->
             <div class="text">
+              <%= image_tag @business.image_p_3.url(:medium), height: 250, width: 400 %>
               <h5 class="upper"><%= @business.feature_three %></h5>
               <p><%= @business.feature_three_description %></p>
             </div>
@@ -90,7 +94,7 @@
       <div class="section-title text-center bm20">
         <h2>About <%= @business.name %></h2>
         <span class="icon"><i class="fa fa-check-square-o"></i><i class="icon-picons-question"></i></span> </div>
-      <div class="text-center">
+           <div class="text-center">
         <p class="lead"><%= @business.description %></p>
       </div>
       <div class="divide30"></div>

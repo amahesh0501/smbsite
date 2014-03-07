@@ -40,14 +40,19 @@
       <div class="col-md-4">
         <div class="form-field"><%= f.text_field :feature_one, placeholder: "Product/Service One" %></div>
         <div class="form-field"><%= f.text_area :feature_one_description, placeholder: "Product/Service One Description", :cols => "31", :rows => "5" %></div>
+        <div class="form-field"><%= f.file_field :image_p_1  %></div>
       </div>
       <div class="col-md-4">
         <div class="form-field"><%= f.text_field :feature_two, placeholder: "Product/Service Two" %></div>
         <div class="form-field"><%= f.text_area :feature_two_description, placeholder: "Product/Service Two Description", :cols => "31", :rows => "5" %></div>
+        <div class="form-field"><%= f.file_field :image_p_2  %></div>
+
       </div>
       <div class="col-md-4">
         <div class="form-field"><%= f.text_field :feature_three, placeholder: "Product/Service Three" %></div>
         <div class="form-field"><%= f.text_area :feature_three_description, placeholder: "Product/Service Three Description", :cols => "31", :rows => "5" %></div>
+
+        <div class="form-field"> <%= f.file_field :image_p_3  %></div>
       </div>
     </div>
 
